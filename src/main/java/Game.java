@@ -29,11 +29,18 @@ public class Game {
         int player2Hand = players.get(1).getHandValue();
 
         if (player1Hand > player2Hand){
-            return "Player 1 wins";
+            return players.get(0).getName() + " wins";
         } if (player1Hand == player2Hand){
             return "Draw";
         } else {
-            return "Player 2 wins";
+            return players.get(1).getName() + " wins";
         }
     }
+
+    public void dealMultipleCards(int numCards) {
+        for (int i = 0; i < numCards; i++){
+            dealCards();
+        }
+    }
+
 }
