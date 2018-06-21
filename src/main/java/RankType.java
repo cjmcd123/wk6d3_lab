@@ -10,9 +10,9 @@ public enum RankType {
     EIGHT(8, "Eight"),
     NINE(9, "Nine"),
     TEN(10, "Ten"),
-    JACK(10, "Jack"),
-    QUEEN(10, "Queen"),
-    KING(10, "King");
+    JACK(11, "Jack"),
+    QUEEN(12, "Queen"),
+    KING(13, "King");
 
     private final int value;
     private final String name;
